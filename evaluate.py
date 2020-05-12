@@ -34,7 +34,7 @@ def topN_evaluate(test_data, pred_y, test_y, N):
     total = len(list(concat_df["result"]))
     acc = answer/total
     
-    print("accuracy : ", answer/total)
+    print("topN accuracy : ", answer/total)
     
     catg_df = test_data[["cateCode", 'vocid', 'cateL', 'cateM', 'cateS']]
     catg_df["index"] = test_y.index
