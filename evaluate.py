@@ -2,7 +2,7 @@ from tqdm import tqdm
 import numpy as np
 import pandas as pd
 
-
+#top N evalutation module
 def topN_evaluate(test_data, pred_y, test_y, N):
     
     label_nm_list = test_y.columns
