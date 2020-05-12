@@ -36,7 +36,7 @@ def topN_evaluate(test_data, pred_y, test_y, N):
     
     print("accuracy : ", answer/total)
     
-    catg_df = test_data[["cateCode", 'vocid', 'cateL', 'cateM', 'cateS']].iloc[test_y.index]
+    catg_df = test_data[["cateCode", 'vocid', 'cateL', 'cateM', 'cateS']]
     catg_df["index"] = test_y.index
     catg_df['title'] = test_data.title
     catg_df["cont"] = test_Data.cont
