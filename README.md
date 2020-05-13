@@ -7,15 +7,12 @@ hierarchical model
 
 ## input data 
 input data는 json파일로, 아래와 같은 형태로 구성된다.
-
-id            : key column으로 12자리 숫자이다, string
-cateCode      : 대/중/소분류 코드로 각각 계층별 분류코드는 영문철자1자리고 구성된다. string
-(ex. cateCode가 ABC -> 대분류 A, 중분류 B, 소분류 C를 의미한다)
-title         : 문의 제목, string
-cont          : 문의 내용, string
-product_name  : 문의한 상품명, string
-
-| id           | cateCode | title | cont      | product_name |
-|--------------|----------|-------|-----------|--------------|
-| 201808010001 | AAB      | abc.. | abcde.... | abcdef....   |
-| ............ | ...      | ...   | .....     | .....        |
+| columns          | comment                                                                                                                              | type   |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------|
+| id               | key column으로 12자리 숫자이다                                                                                                       | string |
+| cateCode         | 대/중/소분류 코드로 각각 계층별 분류코드는 영문철자1자리고 구성된다. (ex. cateCode가 ABC -> 대분류 A, 중분류 B, 소분류 C를 의미한다) | string |
+| title            | 문의 제목                                                                                                                            | string |
+| cont             | 문의 내용                                                                                                                            | string |
+| morph_anal_title | 문의 제목 형태소 분석결과                                                                                                            | list   |
+| morph_anal_cont  | 문의 내용 형태소 분석결과                                                                                                            | list   |
+| product_name     | 문의한 상품명, 단순 문의인 경우 null                                                                                                 | string |
