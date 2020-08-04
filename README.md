@@ -20,3 +20,4 @@ input data는 json파일로, 아래와 같은 형태로 구성된다.
 | morph_anal_cont  | 문의 내용 형태소 분석결과                                                                                                            | list   |
 | product_name     | 문의한 상품명, 단순 문의인 경우 null                                                                                                 | string |
 
+참고 [https://github.com/papower1/Awesome-Korean-NLP-Papers]
