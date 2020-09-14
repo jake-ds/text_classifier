@@ -34,9 +34,11 @@ config = {
 }
 
 
+#config return
 def get():
     return config
 
+#print config 
 def show_config(config):
     def dict_pring(dict_item):
         print("{key} : {value}".format(key=dict_item[0], value=dict_item[1]))
